@@ -1,16 +1,16 @@
 {
   "developmentAmazon": {
     "username": "ylsnechbtzagbz",
-    "password": "40715ac7c2d52637d16197bcc9b8ab3a16c71b2e5e49b437b3c1711cd5a6e500",
-    "database": "d4833h3osulqcn",
-    "host": "ec2-54-228-243-238.eu-west-1.compute.amazonaws.com",
+    "password": "86e75d6a216051944b9d625a1999f2ed935246676e9cc8746fbc78b71acd69c1",
+    "database": "d5fdsh3ced11md",
+    "host": "ec2-54-247-89-181.eu-west-1.compute.amazonaws.com",
     "dialect": "postgres"
   },
   "production": {
     "username": "ylsnechbtzagbz",
-    "password": "40715ac7c2d52637d16197bcc9b8ab3a16c71b2e5e49b437b3c1711cd5a6e500",
-    "database": "d4833h3osulqcn",
-    "host": "ec2-54-228-243-238.eu-west-1.compute.amazonaws.com",
+    "password": "86e75d6a216051944b9d625a1999f2ed935246676e9cc8746fbc78b71acd69c1",
+    "database": "d5fdsh3ced11md",
+    "host": "ec2-54-247-89-181.eu-west-1.compute.amazonaws.com",
     "dialect": "postgres"
   },
     "development": {
