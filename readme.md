@@ -1,4 +1,4 @@
-# Ouche Dinier Responsive Web App
+# Fete Ecole Responsive Web App
 
 Front Angular 6
 -Bénévole inscription
