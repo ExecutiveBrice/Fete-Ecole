@@ -1,11 +1,17 @@
 {
+<<<<<<< HEAD
   "developmentAmazon": {
     "username": "ylsnechbtzagbz",
+=======
+  "production": {
+    "username": "fqzlkfqtuqdyrd",
+>>>>>>> fe095fc154714e78d0c2fed7a4a89d75215ab769
     "password": "86e75d6a216051944b9d625a1999f2ed935246676e9cc8746fbc78b71acd69c1",
     "database": "d5fdsh3ced11md",
     "host": "ec2-54-247-89-181.eu-west-1.compute.amazonaws.com",
     "dialect": "postgres"
   },
+<<<<<<< HEAD
   "production": {
     "username": "ylsnechbtzagbz",
     "password": "86e75d6a216051944b9d625a1999f2ed935246676e9cc8746fbc78b71acd69c1",
@@ -19,5 +25,13 @@
     "database": "postgres",
     "host": "192.168.1.19",
     "dialect": "postgres"
+=======
+    "development": {
+    "username": "pi",
+    "password": "serveurBrice",
+    "database": "postgres",
+    "host": "192.168.1.19",
+    "dialect": "postgres"
+>>>>>>> fe095fc154714e78d0c2fed7a4a89d75215ab769
   }
 }
