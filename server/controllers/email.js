@@ -3,13 +3,11 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'alod.section.fete@gmail.com',
+    user: 'amicalelaiquebeautour@gmail.com',
     pass: 'ngzxgjexnulwvqgq'
   }
 });
-//compte Gmail
-//alod.section.fete@gmail.com
-//OucheDinier44400
+
 var mailOptions = {
   from: 'ALOD Ouche Dinier',
   to: 'Adresse mail',

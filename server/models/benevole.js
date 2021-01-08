@@ -14,6 +14,12 @@ module.exports = function(sequelize, DataTypes) {
     nom: {
       type: DataTypes.STRING,
     },
+    enfants: {
+      type: DataTypes.STRING,
+    },
+    classes: {
+      type: DataTypes.STRING,
+    },
     telephone: {
       type: DataTypes.STRING,
     },

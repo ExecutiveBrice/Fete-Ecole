@@ -195,7 +195,9 @@ module.exports = {
       nom: req.body.nom,
       telephone: req.body.telephone,
       email: req.body.email,
-      prenom: req.body.prenom
+      prenom: req.body.prenom,
+      enfants: req.body.enfants,
+      classes: req.body.classes
     })
       .then(function (benevole) {
         console.log("add - 2")
@@ -225,6 +227,8 @@ module.exports = {
       telephone: req.body.telephone,
       email: req.body.email,
       prenom: req.body.prenom,
+      enfants: req.body.enfants,
+      classes: req.body.classes,
       commentaire: req.body.commentaire,
       gateaux: req.body.gateaux
     }, { where: { id: (req.body.id) } })
