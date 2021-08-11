@@ -1,16 +1,23 @@
 {
-  "production": {
+  "test": {
     "username": "fqzlkfqtuqdyrd",
     "password": "86e75d6a216051944b9d625a1999f2ed935246676e9cc8746fbc78b71acd69c1",
     "database": "d5fdsh3ced11md",
     "host": "ec2-54-247-89-181.eu-west-1.compute.amazonaws.com",
-    "dialect": "postgres"
+    "port":5432,
+    "dialect": "postgres",
+    "ssl": false
   },
     "development": {
     "username": "pi",
     "password": "serveurBrice",
     "database": "postgres",
     "host": "192.168.1.19",
-    "dialect": "postgres"
+    "port":5432,
+    "dialect": "postgres",
+    "ssl": false
+  },
+  "production": {
+    "use_env_variable": "postgres://fqzlkfqtuqdyrd:86e75d6a216051944b9d625a1999f2ed935246676e9cc8746fbc78b71acd69c1@ec2-54-247-89-181.eu-west-1.compute.amazonaws.com:5432/d5fdsh3ced11md"
   }
 }
