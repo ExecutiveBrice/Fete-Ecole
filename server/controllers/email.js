@@ -3,8 +3,11 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'amicalelaiquebeautour@gmail.com',
-    pass: 'ngzxgjexnulwvqgq'
+    type: 'OAuth2',
+    user: "amicalelaiquebeautour@gmail.com",
+    pass: "ngzxgjexnulwvqgq",
+    clientId: "786730254987-glf7hjvbe556pcd2rrud3o0sgavsc3l8.apps.googleusercontent.com",
+    clientSecret: "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"
   }
 });
 //compte Gmail
