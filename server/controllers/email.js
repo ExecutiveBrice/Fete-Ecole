@@ -1,13 +1,17 @@
 'use strict';
+const myAccessToken = myOAuth2Client.getAccessToken()
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     type: 'OAuth2',
     user: "amicalelaiquebeautour@gmail.com",
-    pass: "ngzxgjexnulwvqgq",
     clientId: "786730254987-glf7hjvbe556pcd2rrud3o0sgavsc3l8.apps.googleusercontent.com",
-    clientSecret: "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"
+    clientSecret: "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",
+    refreshToken: "Refresh Token Here",
+    accessToken: myAccessToken //access token variable we defined earlier
   }
 });
 //compte Gmail
