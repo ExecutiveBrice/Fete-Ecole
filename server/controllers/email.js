@@ -1,41 +1,39 @@
 'use strict';
+var nodemailer = require('nodemailer');
+/*
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
+
 const CLIENT_EMAIL = "amicalelaiquebeautour@gmail.com";
 const CLIENT_ID = "786730254987-glf7hjvbe556pcd2rrud3o0sgavsc3l8.apps.googleusercontent.com";
 const CLIENT_SECRET = "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";
 const REDIRECT_URI = "https://developers.google.com/oauthplayground";
 const REFRESH_TOKEN = "GOCSPX-K"
 
-const { google } = require("googleapis");
-const OAuth2 = google.auth.OAuth2;
-var nodemailer = require('nodemailer');
 
-const OAuth2Client = new google.auth.OAuth2(
+
+
+const myOAuth2Client = new OAuth2(
   CLIENT_ID,
   CLIENT_SECRET,
   REDIRECT_URI,
 );
 
-OAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
+//myOAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
 
 const myAccessToken = myOAuth2Client.getAccessToken()
-
+*/
 var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    type: 'OAuth2',
-    user: CLIENT_EMAIL,
-    clientId: CLIENT_ID,
-    clientSecret: CLIENT_SECRET,
-    refreshToken: REFRESH_TOKEN,
-    accessToken: myAccessToken //access token variable we defined earlier
+    user: 'amicalelaiquebeautour@gmail.com',
+    pass: 'ngzxgjexnulwvqgq'
   }
 });
 //compte Gmail
-//alod.section.fete@gmail.com
-//OucheDinier44400
 var mailOptions = {
-  from: 'ALOD Ouche Dinier',
+  from: 'Amicale Beautour',
   to: 'Adresse mail',
   subject: 'Sujet du mail',
   html: 'Corps du mail'
