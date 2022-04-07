@@ -33,28 +33,8 @@
             <button type="button" class="btn btn-block btn-success" [ngClass]="{'btn-danger':bloque == 'true'}"
                   (click)="updateBlocage(bloque)">{{bloque == 'true'?'Je clique pour débloquer le site':'Je clique pour bloquer le site'}}</button>
       </div>
-      <div class="col-sm-12">
-            <button type="button" class="btn btn-block btn-primary" (click)="mail = !mail">Envoi de mails</button>
-      </div>
 
-      <div *ngIf="mail" class="form-group col-sm-12 ">
 
-            <select [ngModel]="selectedDeviceObj" (ngModelChange)="getMailingList($event)" class="form-control">
-                  <option [ngValue]="mailingList" *ngFor="let mailingList of mailingLists">{{mailingList.name}}
-                  </option>
-            </select>
-
-            <input type="text" [(ngModel)]="emailInfo.subject" class="form-control">
-            <textarea rows="10" [(ngModel)]="emailInfo.text" class="form-control"></textarea>
-
-            <div class="checkbox">
-                  <label><input type="checkbox" [(ngModel)]="theCheckbox" (change)="toggleVisibility($event)">Rappel des
-                        choix des inscrits</label>
-            </div>
-
-            <button type="button" class="btn btn-block btn-primary" (click)="envoiMail(emailInfo)">
-                  Envoyer ce message à la liste choisi</button>
-      </div>
 
 
 

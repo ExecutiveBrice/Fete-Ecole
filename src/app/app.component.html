@@ -24,12 +24,4 @@
   </div>
 
 
-  <div *ngIf="!mail">
-    <button type="button" class="btn btn-block btn-danger" (click)="mail = !mail">Nous envoyer un email</button>
-  </div>
-  <div *ngIf="mail">
-    <textarea rows="3" [(ngModel)]="email.text" placeholder="Un problème, une question, une remarque,..."
-      class="form-control"></textarea>
-    <button type="button" class="btn btn-block btn-danger" (click)="envoiMail(email)">Envoi de l'email</button>
-  </div>
 </nav>
